@@ -1,12 +1,16 @@
 import React from 'react';
 import Card from './components/Card';
 import About from './components/About';
+import Experience from './components/Experience';
 import Skills from './components/Skills';
+import Resume from './components/Resume';
 import ContactMe from './components/Contact';
+import ContactForm from './components/GetInTouch';
 import Footer from './components/Footer';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import GetInTouch from './components/GetInTouch';
 
 export default function App() 
 {
@@ -24,9 +28,16 @@ export default function App()
       <div data-aos='fade-up' data-aos-duration='800' data-aol-delay='400'>
         <About />
       </div>
-      
-      <Skills />
-      <ContactMe />
+      <div data-aos='fade-up' data-aos-duration='800' data-aol-delay='400'>
+        <Skills />
+      </div>
+      <div data-aos='fade-up' data-aos-duration='800' data-aol-delay='400'>
+        <Experience />
+      </div>
+      <div data-aos='fade-up' data-aos-duration='800' data-aol-delay='400'>
+        <Resume />
+      </div>
+      <GetInTouch />
       <Footer />
     </div>
   )

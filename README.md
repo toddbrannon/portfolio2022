@@ -19,7 +19,7 @@ You may also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### `npm run build``
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -68,3 +68,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+            <div className='flex flex-col w-40 p-10 m-6 overflow-hidden bg-white shadow-2xl rounded-xl sm:w-52'>
+                <DiBootstrap className="mx-auto text-4xl text-orange-500"/>
+                <p className='mt-6 text-xl sm:text-xl font-semibold text-center text-slate-600'>Bootstrap</p>
+            </div>
+            <div className='flex flex-col w-40 p-10 m-6 overflow-hidden bg-white shadow-2xl rounded-xl sm:w-52'>
+                <SiTailwindcss className="mx-auto text-4xl text-orange-500"/>
+                <p className='mt-6 text-xl sm:text-xl font-semibold text-center text-slate-600'>Tailwind CSS</p>
+            </div>
+            <div className='flex flex-col w-40 p-10 m-6 overflow-hidden bg-white shadow-2xl rounded-xl sm:w-52'>
+                <SiMicrosoftazure className="mx-auto text-4xl text-orange-500"/>
+                <p className='mt-6 text-xl sm:text-xl font-semibold text-center text-slate-600'>Azure</p>
+            </div>
