@@ -10,8 +10,8 @@ import {DiBootstrap} from 'react-icons/di';
 function Skills()
 {
     return(
-        <div className='max-w-4xl mx-auto justify-center py-0' id="tech">
-            <p className='text-2xl text-slate-600 text-center sm:text-4xl pt-4 font-bold'>
+        <div className='max-w-full mx-auto p-20 bg-white dark:bg-gray-900 justify-center' id="tech">
+            <p className='text-4xl md:text-4xl sm:text-5xl text-slate-600 dark:text-slate-300 text-center py-4 font-extrabold'>
                My tools.
             </p>
         <div className="flex flex-wrap justify-center pt-2">

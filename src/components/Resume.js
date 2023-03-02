@@ -4,8 +4,8 @@ import {FaChevronDown} from 'react-icons/fa';
 
 function Resume() {
     return(
-        <div className='max-w-4xl mt-4 mx-auto'>
-            <p className='text-2xl text-slate-600 md:text-4xl font-bold text-center'>
+        <div className='max-w-full mt-4 mx-auto p-20 bg-indigo-200'>
+            <p className='text-4xl md:text-4xl sm:text-5xl text-slate-600 text-center py-4 font-extrabold'>
                 My resume.
             </p>
             <div className="flex flex-wrap justify-center pt-2">

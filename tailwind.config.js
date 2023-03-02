@@ -8,6 +8,9 @@ module.exports = {
         'deep-sea-blue': '#011D2B',
         'tailwind-blue': '#10172A'
       },
+      height: {
+        'custom-height': '80vh',
+      }
     },
   },
   plugins: [],

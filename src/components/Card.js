@@ -11,7 +11,7 @@ function Card()
                     <img className='w-32 mx-auto shadow-xl rounded-full drop-shadow-md' src={profile} alt='profile photo'/>
                 </div>
                 <div className='text-center mt-5'>
-                    <p className='text-xl sm:text-2xl text-gray-900'>
+                    <p className='text-4xl md:text-4xl sm:text-5xl text-slate-600 font-bold'>
                         Todd Brannon
                     </p>
                     <p className='text-xs sm:text-base text-gray-600 pt-2 pb-4 px-5 w-auto inline-block border-b-2'>
