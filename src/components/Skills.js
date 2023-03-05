@@ -12,9 +12,9 @@ function Skills()
     return(
         <div className='max-w-4xl mx-auto justify-center py-0' id="tech">
             <p className='text-2xl text-slate-600 text-center sm:text-4xl pt-4 font-bold'>
-               My tools.
+               Tech stack.
             </p>
-        <div className="flex flex-wrap justify-center pt-2">
+        <div className="flex flex-wrap justify-center pt-6">
             <div className='flex flex-col w-40 p-10 m-6 overflow-hidden bg-white shadow-2xl rounded-xl sm:w-52'>
                 <SiJavascript className="mx-auto text-4xl text-yellow-400"/>
                 <p className='mt-6 text-xl sm:text-xl font-semibold text-center text-slate-600'>JavaScript</p>

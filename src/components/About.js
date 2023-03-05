@@ -8,7 +8,7 @@ function About() {
             <p className='text-2xl text-slate-600 md:text-4xl font-bold text-center'>
                 About me.
             </p>
-            <p className='text-base md:text-xl text-center text-gray-600 leading-relaxed mt-4'>
+            <p className='text-base md:text-xl text-center text-gray-600 leading-relaxed mt-4 pt-2'>
                
                 Hello! My name is Todd and I enjoy creating things that live on computers and on the internet. My interest in programming started
                 back in about 2011 just a little over a year after making the pivot out of a healthcare role I had been in for the previous 16 years. That's

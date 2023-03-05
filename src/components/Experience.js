@@ -8,7 +8,7 @@ function Experience() {
             <p className='text-2xl text-slate-600 md:text-4xl font-bold text-center'>
                 My experience.
             </p>
-            <div className="flex flex-wrap justify-center pt-2">
+            <div className="flex flex-wrap justify-center pt-6">
                 <div class="w-60 bg-white shadow rounded m-4">
                     <h2 className='text-base md:text-xl text-center text-gray-600 leading-relaxed mt-4'>Willrich Precision Instrument</h2>
                     <p className='text-base md:text-l text-center text-gray-600 leading-relaxed mt-4'>

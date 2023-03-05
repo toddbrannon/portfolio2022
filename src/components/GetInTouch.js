@@ -38,6 +38,9 @@ const GetInTouch = () => {
                                 <p class="text-normal text-lg sm:text-2xl font-medium text-gray-600 dark:text-gray-400 mt-2">
                                     Fill in the form to start a conversation
                                 </p>
+                                <p class="text-normal text-sm sm:text-sm font-light text-gray-600 dark:text-gray-400 mt-2">
+                                    Seriously. You can send me an email directly from this form.
+                                </p>
         
                                 <div class="flex items-center mt-8 pt-4 text-gray-600 dark:text-gray-400">
                                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500">
