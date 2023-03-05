@@ -10,6 +10,7 @@ function Resume() {
             </p>
             <div className="flex flex-wrap justify-center pt-2">
                 
+                
             </div>
             
             
