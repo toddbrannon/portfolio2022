@@ -81,7 +81,7 @@ const GetInTouch = () => {
                                 </div>
                                 <div className="p-4 pb-0">
                                     <ReCAPTCHA
-                                    sitekey={REACT_APP_RECAPTCHA_SECRET_KEY}
+                                    sitekey="6LcLo9UkAAAAADhXnDkKS6anPqlq3Qka53iM3HYR"
                                     onChange={onChange}
                                     />,
                                 </div>
