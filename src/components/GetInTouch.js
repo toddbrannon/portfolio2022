@@ -1,8 +1,10 @@
 import React, { useRef } from 'react';
 import {FaArrowRight} from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
+import ReCAPTCHA from "react-google-recaptcha";
 
 const GetInTouch = () => {
+    const onChange = () => {}
     const form = useRef();
     const { REACT_APP_EMAILJS_SERVICE_ID, REACT_APP_EMAILJS_TEMPLATE_ID, REACT_APP_EMAILJS_PUBLIC_KEY } = process.env
 
@@ -61,7 +63,7 @@ const GetInTouch = () => {
                                 </div>
                             </div>
         
-                            <form class="p-6 flex flex-col justify-center" ref={form} onSubmit={sendEmail}>
+                            <form class="p-6 pt-0 flex flex-col justify-center" ref={form} onSubmit={sendEmail}>
                                 <div class="flex flex-col">
                                     <label for="name" class="hidden">Full Name</label>
                                     <input type="name" name="user_name" id="name" placeholder="Full Name" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold dark:text-gray-200 focus:border-indigo-500 focus:outline-none"/>
@@ -74,10 +76,17 @@ const GetInTouch = () => {
         
                                 <div class="flex flex-col mt-2">
                                     <label for="tel" class="hidden">Message</label>
-                                    <textarea name="message" id="message" placeholder="Message" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold dark:text-gray-200 focus:border-indigo-500 focus:outline-none"/>
+                                    <textarea name="message" id="message" placeholder="Message" rows="3" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold dark:text-gray-200 focus:border-indigo-500 focus:outline-none"/>
                                 </div>
+                                <div className="p-4 pb-0">
+                                    <ReCAPTCHA
+                                    sitekey="6LcLo9UkAAAAADhXnDkKS6anPqlq3Qka53iM3HYR"
+                                    onChange={onChange}
+                                    />,
+                                </div>
+                                    
 
-                                <button type="submit" value="send" className="mt-10 inline-block w-auto bg-slate-900 dark:bg-green-500 font-display text-white text-base md:text-xl py-4 px-7 cursor-pointer hover:bg-indigo-500 dark:hover:bg-indigo-500 transition ease-in-out duration-300">
+                                <button type="submit" value="send" className="mt-0 inline-block w-auto bg-slate-900 dark:bg-green-500 font-display text-white text-base md:text-xl py-4 px-7 cursor-pointer hover:bg-indigo-500 dark:hover:bg-indigo-500 transition ease-in-out duration-300">
                                     Submit
                                 </button>
         
