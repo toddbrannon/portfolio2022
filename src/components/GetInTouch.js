@@ -1,16 +1,11 @@
 import React, { useRef, useState, useEffect } from 'react';
-import {FaArrowRight} from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA from "react-google-recaptcha";
-import { Helmet } from 'react-helmet';
 
 const GetInTouch = () => {
     
     const initialValues = {name: "", email: "", message: ""}
     const [formValues, setFormValues]=useState(initialValues)
-    const [name, setName] = useState("")
-    const [email, setEmail] = useState("")
-    const [message, setMessage] = useState("")
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormValues({...formValues, [name]: value })
@@ -41,10 +36,6 @@ const GetInTouch = () => {
         console.log("Result " + result.text);
         console.log("message sent")
         console.log(formValues)
-      
-        setName("")
-        setEmail("")
-        setMessage("")
         
       }, (error) => {
           console.log(error.text);

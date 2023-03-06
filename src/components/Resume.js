@@ -22,11 +22,11 @@ function Resume() {
                 
             </div>
              
-            <ScrollIntoView selector="">
+            {/* <ScrollIntoView selector="">
                 <div className='mx-auto p-20'>
                     <FaChevronDown className='animate-bounce mx-auto text-3xl text-blue-500' />
                 </div>
-            </ScrollIntoView>
+            </ScrollIntoView> */}
         </div>
         
     )
