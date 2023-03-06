@@ -39,7 +39,9 @@ export default function App()
       </div>
       <GetInTouch />
       <Footer />
+      
     </div>
+    
   )
 }
 

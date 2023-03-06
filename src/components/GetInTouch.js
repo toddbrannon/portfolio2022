@@ -1,17 +1,34 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import {FaArrowRight} from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA from "react-google-recaptcha";
+import { Helmet } from 'react-helmet';
 
 const GetInTouch = () => {
     
+    const initialValues = {name: "", email: "", message: ""}
+    const [formValues, setFormValues]=useState(initialValues)
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [message, setMessage] = useState("")
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormValues({...formValues, [name]: value })
+        console.log(formValues)
+    };
+    
+    const [formErrors, setFormErrors]=useState({})
+    const [isSubmit, setIsSubmit] = useState(false)
     const onChange = () => {}
     const form = useRef();
     const { REACT_APP_EMAILJS_SERVICE_ID, REACT_APP_EMAILJS_TEMPLATE_ID, REACT_APP_EMAILJS_PUBLIC_KEY, REACT_APP_RECAPTCHA_SECRET_KEY } = process.env
 
-    const sendEmail = (e) => {
-    e.preventDefault();
+    
 
+    const sendEmail = (e) => {
+      e.preventDefault();
+    setFormErrors(validate(formValues))
+    
     emailjs
         .sendForm(
             `${REACT_APP_EMAILJS_SERVICE_ID}`, 
@@ -20,18 +37,52 @@ const GetInTouch = () => {
             `${REACT_APP_EMAILJS_PUBLIC_KEY}`
         )
       .then((result) => {
-          console.log(result.text);
-          console.log("message sent")
-          e.target.reset()
+        setIsSubmit(true)
+        console.log("Result " + result.text);
+        console.log("message sent")
+        console.log(formValues)
+      
+        setName("")
+        setEmail("")
+        setMessage("")
+        
       }, (error) => {
           console.log(error.text);
       });
     };
 
+    useEffect(() => {
+        console.log(formErrors)
+        if(Object.keys(formErrors).length === 0 && isSubmit) {
+            console.log(formValues)
+            
+        }
+    }, [formErrors])
+
+    const validate = (values) => {
+        const errors = {}
+        const regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        if (!values.name){
+            errors.name = "Name is required!"
+        }
+        if (!values.email){
+            errors.email = "Email is required!"
+        } else if (!regex.test(values.email)) {
+            errors.email = "Please enter a valid email"
+        }
+        if (!values.message){
+            errors.message = "A message is required!"
+        }
+        return errors;
+    }
+
     return (
         
         <div class="relative flex items-top justify-center min-h-screen bg-white dark:bg-gray-900 sm:items-center sm:pt-0">
+            
                 <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
+                {Object.keys(formErrors).length === 0 && isSubmit ? (<div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative">Your message has been sent!</div>) : 
+                            (<pre className="text-white"></pre>)}
                     <div class="mt-6 overflow-hidden">
                         <div class="grid grid-cols-1 md:grid-cols-2">
                             <div class="p-6 mr-2 bg-gray-100 dark:bg-gray-800 sm:rounded-lg">
@@ -63,40 +114,47 @@ const GetInTouch = () => {
                                     </div>
                                 </div>
                             </div>
-        
+
+                            
                             <form class="p-6 pt-0 flex flex-col justify-center" ref={form} onSubmit={sendEmail}>
+                                <p className="text-red-600 mb-0 mt-2">{ formErrors.name }</p>
                                 <div class="flex flex-col">
                                     <label for="name" class="hidden">Full Name</label>
-                                    <input type="name" name="user_name" id="name" placeholder="Full Name" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold dark:text-gray-200 focus:border-indigo-500 focus:outline-none"/>
+                                    <input type="name" name="name" id="name" value={formValues.name} onChange={handleChange} placeholder="Full Name" class="w-100 mt-0 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold dark:text-gray-200 focus:border-indigo-500 focus:outline-none"/>
                                 </div>
         
+                                <p className="text-red-600 mb-0 mt-2">{ formErrors.email }</p>
                                 <div class="flex flex-col mt-2">
                                     <label for="email" class="hidden">Email</label>
-                                    <input type="email" name="user_email" id="email" placeholder="Email" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold dark:text-gray-200 focus:border-indigo-500 focus:outline-none"/>
+                                    <input type="email" name="email" id="email" value={formValues.email} onChange={handleChange} placeholder="Email" class="w-100 mt-0 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold dark:text-gray-200 focus:border-indigo-500 focus:outline-none"/>
                                 </div>
         
+                                <p className="text-red-600 mb-0 mt-2">{ formErrors.message }</p>
                                 <div class="flex flex-col mt-2">
-                                    <label for="tel" class="hidden">Message</label>
-                                    <textarea name="message" id="message" placeholder="Message" rows="3" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold dark:text-gray-200 focus:border-indigo-500 focus:outline-none"/>
+                                    <label for="message" class="hidden">Message</label>
+                                    <textarea name="message" id="message" value={formValues.message} onChange={handleChange} placeholder="Message" rows="3" class="w-100 mt-0 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold dark:text-gray-200 focus:border-indigo-500 focus:outline-none"/>
                                 </div>
+                                <p className="text-red-600 mb-0 mt-2">{ formErrors.recaptcha }</p>
                                 <div className="p-4 pb-0">
                                     <ReCAPTCHA
                                     sitekey="6LcLo9UkAAAAADhXnDkKS6anPqlq3Qka53iM3HYR"
+                                    data-callback="recaptchaCallback"
                                     onChange={onChange}
                                     />,
                                 </div>
-                                    
 
                                 <button type="submit" value="send" className="mt-0 inline-block w-auto bg-slate-900 dark:bg-green-500 font-display text-white text-base md:text-xl py-4 px-7 cursor-pointer hover:bg-indigo-500 dark:hover:bg-indigo-500 transition ease-in-out duration-300">
                                     Submit
                                 </button>
-        
+                                
 
                             </form>
+                           
                         </div>
                     </div>
                 </div>
             </div>
+            
     
     )
 };
