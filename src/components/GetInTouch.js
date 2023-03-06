@@ -4,9 +4,10 @@ import emailjs from '@emailjs/browser';
 import ReCAPTCHA from "react-google-recaptcha";
 
 const GetInTouch = () => {
+    
     const onChange = () => {}
     const form = useRef();
-    const { REACT_APP_EMAILJS_SERVICE_ID, REACT_APP_EMAILJS_TEMPLATE_ID, REACT_APP_EMAILJS_PUBLIC_KEY } = process.env
+    const { REACT_APP_EMAILJS_SERVICE_ID, REACT_APP_EMAILJS_TEMPLATE_ID, REACT_APP_EMAILJS_PUBLIC_KEY, REACT_APP_RECAPTCHA_SECRET_KEY } = process.env
 
     const sendEmail = (e) => {
     e.preventDefault();
@@ -80,7 +81,7 @@ const GetInTouch = () => {
                                 </div>
                                 <div className="p-4 pb-0">
                                     <ReCAPTCHA
-                                    sitekey="6LcLo9UkAAAAADhXnDkKS6anPqlq3Qka53iM3HYR"
+                                    sitekey={REACT_APP_RECAPTCHA_SECRET_KEY}
                                     onChange={onChange}
                                     />,
                                 </div>
