@@ -6,7 +6,7 @@ function Card()
 {
     return(
         <div className='w-full'>
-            <div className='flex flex-col justify-center max-w-xs mx-auto bg-white shadow-xl rounded-xs p-5'>
+            <div className='flex flex-col justify-center max-w-xs mx-auto mb-12 bg-white shadow-xl rounded-xs p-5'>
                 <div className=''>
                     <img className='w-32 mx-auto shadow-xl rounded-full drop-shadow-md' src={profile} alt='profile photo'/>
                 </div>

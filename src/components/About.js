@@ -4,8 +4,8 @@ import {FaChevronDown} from 'react-icons/fa';
 
 function About() {
     return(
-        <div className='max-w-4xl mt-20 mx-auto'>
-            <p className='text-2xl text-slate-600 md:text-4xl font-bold text-center'>
+        <div className='max-w-full mt-4 mx-auto p-10 bg-indigo-200'>
+            <p className='text-2xl text-slate-600 md:text-4xl font-bold text-center py-4'>
                 About me.
             </p>
             <p className='text-base md:text-xl text-center text-gray-600 leading-relaxed mt-4'>

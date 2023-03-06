@@ -4,15 +4,14 @@ import {SiJavascript, SiReact, SiMongodb, SiTailwindcss, SiMicrosoftsqlserver, S
 import {GrMysql} from 'react-icons/gr';
 import ScrollIntoView from 'react-scroll-into-view';
 import {FaChevronDown} from 'react-icons/fa';
-import {DiBootstrap} from 'react-icons/di';
 
 
 function Skills()
 {
     return(
-        <div className='max-w-4xl mx-auto justify-center py-0' id="tech">
-            <p className='text-2xl text-slate-600 text-center sm:text-4xl pt-4 font-bold'>
-               My tools.
+        <div className='max-w-full mx-auto p-10 bg-white dark:bg-gray-900 justify-center' id="tech">
+            <p className='text-2xl md:text-4xl text-slate-600 dark:text-slate-300 text-center py-4 font-extrabold'>
+              Tech stack.
             </p>
         <div className="flex flex-wrap justify-center pt-2">
             <div className='flex flex-col w-40 p-10 m-6 overflow-hidden bg-white shadow-2xl rounded-xl sm:w-52'>

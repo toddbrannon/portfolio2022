@@ -4,8 +4,8 @@ import {FaChevronDown} from 'react-icons/fa';
 
 function Experience() {
     return(
-        <div className='max-w-4xl mt-4 mx-auto'>
-            <p className='text-2xl text-slate-600 md:text-4xl font-bold text-center'>
+        <div className='max-w-4xl mt-4 mx-auto p-10'>
+            <p className='text-2xl text-slate-600 md:text-4xl font-bold text-center py-4'>
                 My experience.
             </p>
             <div className="flex flex-wrap justify-center pt-2">
