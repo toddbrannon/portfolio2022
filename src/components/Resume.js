@@ -1,7 +1,7 @@
 import React from 'react';
 import ScrollIntoView from 'react-scroll-into-view';
 import resume from '../images/ResumeImg.png'
-import {FaChevronDown, FaChevronUp} from 'react-icons/fa';
+import {FaChevronDown} from 'react-icons/fa';
 
 function Resume() {
     return(
