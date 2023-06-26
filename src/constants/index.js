@@ -1,0 +1,11 @@
+export const brand = "Todd Brannon"
+export const Copyright = new Date().getFullYear() + " "
+
+export const MarketPlaceAppLink = "https://rc-marketplace-app-alt-1.vercel.app/"
+export const PeakFlowRateCalcLink = "https://peak-flow-rate-calculator.onrender.com/"
+export const TruSponseNotifyLink = "https://trusponse-notify.onrender.com"
+export const AnalystFactoryLink = "https://www.analystfactory.com"
+export const LeadStreamLocalLink = "https://www.leadstreamlocal.com"
+export const TruSponseSolutionsLink = "https://www.trusponse.com"
+export const LCR_ProjectLink = "https://www.youtube.com/watch?v=F3YP_dx8JdM"
+export const NutritionFormLink = "https://youtu.be/JKkRVDthL0M"

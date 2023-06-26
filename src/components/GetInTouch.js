@@ -4,6 +4,9 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 const GetInTouch = () => {
     
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
     const initialValues = {name: "", email: "", message: ""}
     const [formValues, setFormValues]=useState(initialValues)
     const handleChange = (e) => {
@@ -36,7 +39,9 @@ const GetInTouch = () => {
         console.log("Result " + result.text);
         console.log("message sent")
         console.log(formValues)
-        
+        setName('')
+        setEmail('')
+        setMessage('')
       }, (error) => {
           console.log(error.text);
       });

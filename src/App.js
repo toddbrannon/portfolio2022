@@ -4,8 +4,6 @@ import About from './components/About';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Resume from './components/Resume';
-import ContactMe from './components/Contact';
-import ContactForm from './components/GetInTouch';
 import Footer from './components/Footer';
 import Aos from 'aos';
 import 'aos/dist/aos.css';

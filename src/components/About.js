@@ -15,8 +15,8 @@ function About() {
                 about the time I discovered what an Excel macro was. Since then, I have developed some pretty cool things for companies like HCA Healthcare,
                 AutoNation, Willrich Precision Instrument, LCR Capital Partners, and others.
 
-                Turns out discovering the macro recorder in Microsoft Excel in 2011 would end up launching me down the path of developing solutions for a variety
-                of businesses across various industries.
+                Turns out discovering the macro recorder in Microsoft Excel in 2011 would end up propelling me down the path of learning VBA, Javascript, and Python and much more in order to 
+                develop solutions for a variety of businesses across various industries.
 
             </p>
             <ScrollIntoView selector="">
