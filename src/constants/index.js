@@ -9,3 +9,8 @@ export const LeadStreamLocalLink = "https://www.leadstreamlocal.com"
 export const TruSponseSolutionsLink = "https://www.trusponse.com"
 export const LCR_ProjectLink = "https://www.youtube.com/watch?v=F3YP_dx8JdM"
 export const NutritionFormLink = "https://youtu.be/JKkRVDthL0M"
+export const CARAppLink = "https://youtu.be/Y4mpLW1uyYM"
+export const JonBeerToolLink = "https://youtu.be/5s6QvRvkclw"
+export const LCRAppLink = "https://youtu.be/aEeMq65BWN8"
+export const LCRExcelLink = "https://youtu.be/DNzzzj806KM"
+

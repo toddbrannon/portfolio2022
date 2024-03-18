@@ -4,11 +4,15 @@ import LCR_Project from '../images/LCR_DB_1.PNG';
 import Notify from '../images/Notify.png';
 import Nutrition from '../images/NutritionForm.PNG'
 import PeakFlowRate from '../images/PeakFlowRateCalc.png';
-import MarketplaceApp from '../images/MarketplaceApp.png'
-import AnalystFactory from '../images/AnalystFactory.png'
-import LeadStreamLocal from '../images/LeadStreamLocal.png'
-import TruSponseSolutions from '../images/TruSponse.png'
-import { MarketPlaceAppLink, PeakFlowRateCalcLink, TruSponseNotifyLink, AnalystFactoryLink, LeadStreamLocalLink, TruSponseSolutionsLink, LCR_ProjectLink, NutritionFormLink } from '../constants'
+import MarketplaceApp from '../images/MarketplaceApp.png';
+import AnalystFactory from '../images/AnalystFactory.png';
+import LeadStreamLocal from '../images/LeadStreamLocal.png';
+import TruSponseSolutions from '../images/TruSponse.png';
+import CAR_App from '../images/CAR_App.png';
+import JonBeer_Tool from '../images/JonBeer_Tool.png';
+import LCR_App from '../images/LCR_App.png'
+import LCR_Excel from '../images/LCR_Excel.png'
+import { CARAppLink, JonBeerToolLink, LCRAppLink, LCRExcelLink, MarketPlaceAppLink, PeakFlowRateCalcLink, TruSponseNotifyLink, AnalystFactoryLink, LeadStreamLocalLink, TruSponseSolutionsLink, LCR_ProjectLink, NutritionFormLink } from '../constants'
 import {FaChevronDown} from 'react-icons/fa';
 
 function Experience() {
@@ -18,7 +22,63 @@ function Experience() {
                 My experience.
             </p>
             <div className="flex flex-wrap justify-center pt-2">
-            <div class="w-78 bg-white shadow rounded m-4 p-14">
+                <div class="w-78 bg-white shadow rounded m-4 p-14">
+                    <h2 className='w-64 text-base md:text-xl text-center text-gray-600 leading-relaxed mt-4 mb-4'>Self-Serve Database Application</h2>
+                    <a href={CARAppLink} target="_blank">
+                    <img className='w-64 mx-auto shadow-xl drop-shadow-md' src={CAR_App} alt='CAR_App' />
+                    </a>
+                    <div className="w-64">
+                        {/* <p className='text-base md:text-l text-center text-gray-600 leading-relaxed mt-4'>
+                        A full stack CRUD style web application using Node/Express/MongoDB
+                        </p> */}
+                    </div>
+                    <div className="mt-4 text-center text-blue-700 hover:underline">
+                        <a href={CARAppLink} target="_blank">See More</a>
+                    </div>
+                </div>
+                <div class="w-78 bg-white shadow rounded m-4 p-14">
+                    <h2 className='w-64 text-base md:text-xl text-center text-gray-600 leading-relaxed mt-4 mb-4'>CSV Processing Tool (Excel & Google Sheets)</h2>
+                    <a href={JonBeerToolLink} target="_blank">
+                    <img className='w-64 mx-auto shadow-xl drop-shadow-md' src={JonBeer_Tool} alt='JonBeerTool' />
+                    </a>
+                    <div className="w-64">
+                        {/* <p className='text-base md:text-l text-center text-gray-600 leading-relaxed mt-4'>
+                        A full stack CRUD style web application using Node/Express/MongoDB
+                        </p> */}
+                    </div>
+                    <div className="mt-4 text-center text-blue-700 hover:underline">
+                        <a href={JonBeerToolLink} target="_blank">See More</a>
+                    </div>
+                </div>
+                <div class="w-78 bg-white shadow rounded m-4 p-14">
+                    <h2 className='w-64 text-base md:text-xl text-center text-gray-600 leading-relaxed mt-4 mb-4'>Database Driven Report Web App</h2>
+                    <a href={LCRAppLink} target="_blank">
+                    <img className='w-64 mx-auto shadow-xl drop-shadow-md' src={LCR_App} alt='LCR_App' />
+                    </a>
+                    <div className="w-64">
+                        {/* <p className='text-base md:text-l text-center text-gray-600 leading-relaxed mt-4'>
+                        A full stack CRUD style web application using Node/Express/MongoDB
+                        </p> */}
+                    </div>
+                    <div className="mt-4 text-center text-blue-700 hover:underline">
+                        <a href={LCRAppLink} target="_blank">See More</a>
+                    </div>
+                </div>
+                <div class="w-78 bg-white shadow rounded m-4 p-14">
+                    <h2 className='w-64 text-base md:text-xl text-center text-gray-600 leading-relaxed mt-4 mb-4'>Desktop Database and Self-Serve Report</h2>
+                    <a href={LCRExcelLink} target="_blank">
+                    <img className='w-64 mx-auto shadow-xl drop-shadow-md' src={LCR_Excel} alt='LCR_Excel' />
+                    </a>
+                    <div className="w-64">
+                        {/* <p className='text-base md:text-l text-center text-gray-600 leading-relaxed mt-4'>
+                        A full stack CRUD style web application using Node/Express/MongoDB
+                        </p> */}
+                    </div>
+                    <div className="mt-4 text-center text-blue-700 hover:underline">
+                        <a href={LCRExcelLink} target="_blank">See More</a>
+                    </div>
+                </div>
+                <div class="w-78 bg-white shadow rounded m-4 p-14">
                     <h2 className='w-64 text-base md:text-xl text-center text-gray-600 leading-relaxed mt-4 mb-4'>Marketplace Site</h2>
                     <a href={MarketPlaceAppLink} target="_blank">
                     <img className='w-64 mx-auto shadow-xl drop-shadow-md' src={MarketplaceApp} alt='MarketPlaceApp' />

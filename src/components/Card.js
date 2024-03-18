@@ -14,8 +14,12 @@ function Card()
                     <p className='text-xl sm:text-2xl text-gray-900'>
                         Todd Brannon
                     </p>
-                    <p className='text-xs sm:text-base text-gray-600 pt-2 pb-4 px-5 w-auto inline-block border-b-2'>
+                    <p className='text-xs sm:text-base text-gray-600 pt-4 pb-2 px-5 w-auto inline-block border-b-2'>
                         Software Developer
+                    </p>
+
+                    <p className='text-xs sm:text-base text-gray-600 pt-2 pb-4 px-5 w-auto inline-block'>
+                        Data Analyst
                     </p>
                
                     <div className='flex align-center justify-center mt-4'>
@@ -29,7 +33,7 @@ function Card()
                         </a>
                         <span className='sr-only'>YouTube</span>
 
-                        <a className='text-xl m-1 p-1 sm:m-2 sm:p-2 text-purple-600 hover:bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 rounded-full hover:text-white' href="https://www.instagram.com/trusponsesolutions/" target="_blank">
+                        {/* <a className='text-xl m-1 p-1 sm:m-2 sm:p-2 text-purple-600 hover:bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 rounded-full hover:text-white' href="https://www.instagram.com/trusponsesolutions/" target="_blank">
                             <FaInstagram />
                         </a>
                         <span className='sr-only'>Instagram</span>
@@ -38,7 +42,7 @@ function Card()
 
                             <FaEnvelope />
                         </a>
-                        <span className='sr-only'>Github</span>
+                        <span className='sr-only'>Github</span> */}
                     </div>
 
                     
