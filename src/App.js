@@ -32,9 +32,9 @@ export default function App()
       <div data-aos='fade-up' data-aos-duration='800' data-aol-delay='400'>
         <Experience />
       </div>
-      <div data-aos='fade-up' data-aos-duration='800' data-aol-delay='400'>
+      {/* <div data-aos='fade-up' data-aos-duration='800' data-aol-delay='400'>
         <Resume />
-      </div>
+      </div> */}
       {/* <GetInTouch /> */}
       <Footer />
       

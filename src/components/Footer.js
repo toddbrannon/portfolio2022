@@ -4,7 +4,7 @@ import {FaGithub, FaYoutube, FaInstagram, FaEnvelope, FaReact} from 'react-icons
 
 function Footer(){
     return(
-        <div className='py-5 border-t-3/2'>
+        <div className='py-5 border-t-3/2 bg-indigo-200'>
             <div className='flex align-center justify-center mt-4'>
                         <a className='text-xl m-1 p-1 sm:m-2 sm:p-2 text-gray-800 hover:bg-gray-800 rounded-full hover:text-white' href="https://github.com/toddbrannon" target="_blank">
                             <FaGithub />
@@ -16,7 +16,7 @@ function Footer(){
                         </a>
                         <span className='sr-only'>YouTube</span>
 
-                        <a className='text-xl m-1 p-1 sm:m-2 sm:p-2 text-purple-600 hover:bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 rounded-full hover:text-white' href="https://www.instagram.com/trusponsesolutions/" target="_blank">
+                        {/* <a className='text-xl m-1 p-1 sm:m-2 sm:p-2 text-purple-600 hover:bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 rounded-full hover:text-white' href="https://www.instagram.com/trusponsesolutions/" target="_blank">
                             <FaInstagram />
                         </a>
                         <span className='sr-only'>Instagram</span>
@@ -25,7 +25,7 @@ function Footer(){
 
                             <FaEnvelope />
                         </a>
-                        <span className='sr-only'>Github</span>
+                        <span className='sr-only'>Github</span> */}
                     </div>
             <div className='flex text-center justify-center mt-4'>
                 <p className='text-black mb-4'>
