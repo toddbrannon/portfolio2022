@@ -5,7 +5,7 @@ import Notify from '../images/Notify.png';
 import Nutrition from '../images/NutritionForm.PNG'
 import PeakFlowRate from '../images/PeakFlowRateCalc.png';
 import MarketplaceApp from '../images/MarketplaceApp.png';
-import Healthflow from '../images/HealthFlow.png';
+import HealthFlow from '../images/HealthFlow.png';
 import DivReinvest from '../images/DivReinvest.png';
 import ValinorEnergy from '../images/ValinorEnergy.png';
 import TruSponseSolutions from '../images/TruSponse.png';
