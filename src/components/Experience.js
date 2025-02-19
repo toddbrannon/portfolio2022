@@ -5,14 +5,15 @@ import Notify from '../images/Notify.png';
 import Nutrition from '../images/NutritionForm.PNG'
 import PeakFlowRate from '../images/PeakFlowRateCalc.png';
 import MarketplaceApp from '../images/MarketplaceApp.png';
-import AnalystFactory from '../images/AnalystFactory.png';
-import LeadStreamLocal from '../images/LeadStreamLocal.png';
+import Healthflow from '../images/HealthFlow.png';
+import DivReinvest from '../images/DivReinvest.png';
+import ValinorEnergy from '../images/ValinorEnergy.png';
 import TruSponseSolutions from '../images/TruSponse.png';
 import CAR_App from '../images/CAR_App.png';
 import JonBeer_Tool from '../images/JonBeer_Tool.png';
 import LCR_App from '../images/LCR_App.png'
 import LCR_Excel from '../images/LCR_Excel.png'
-import { CARAppLink, JonBeerToolLink, LCRAppLink, LCRExcelLink, MarketPlaceAppLink, PeakFlowRateCalcLink, TruSponseNotifyLink, AnalystFactoryLink, LeadStreamLocalLink, TruSponseSolutionsLink, LCR_ProjectLink, NutritionFormLink } from '../constants'
+import { CARAppLink, JonBeerToolLink, LCRAppLink, LCRExcelLink, MarketPlaceAppLink, PeakFlowRateCalcLink, HealthFlowLink, ValinorLink, DividendReinvestmentLink, TruSponseSolutionsLink, LCR_ProjectLink, NutritionFormLink } from '../constants'
 import {FaChevronDown} from 'react-icons/fa';
 
 function Experience() {
@@ -108,9 +109,9 @@ function Experience() {
                     </div>
                 </div>
                 <div class="w-78 bg-white shadow rounded m-4 p-14">
-                    <h2 className='w-64 text-base md:text-xl text-center text-gray-600 leading-relaxed mt-4 mb-4'>TruSponse Notify</h2>
-                    <a href={TruSponseNotifyLink} target="_blank">
-                        <img className='w-64 mx-auto shadow-xl drop-shadow-md' src={Notify} alt='TruSponseNotify'/>
+                    <h2 className='w-64 text-base md:text-xl text-center text-gray-600 leading-relaxed mt-4 mb-4'>HealthFlow</h2>
+                    <a href={HealthFlowLink} target="_blank">
+                        <img className='w-64 mx-auto shadow-xl drop-shadow-md' src={HealthFlow} alt='HealthFlow'/>
                     </a>  
                     <div className="w-64">
                         {/* <p className='text-base md:text-l text-center text-gray-600 leading-relaxed mt-4'>
@@ -118,13 +119,13 @@ function Experience() {
                         </p> */}
                     </div>
                     <div className="mt-4 text-center text-blue-700 hover:underline">
-                        <a href={TruSponseNotifyLink} target="_blank">See More</a>
+                        <a href={HealthFlowLink} target="_blank">See More</a>
                     </div>
                 </div>
                 <div class="w-78 bg-white shadow rounded m-4 p-14">
-                    <h2 className='w-64 text-base md:text-xl text-center text-gray-600 leading-relaxed mt-4 mb-4'>Analyst Factory</h2>
-                    <a href={AnalystFactoryLink} target="_blank">
-                        <img className='w-64 mx-auto shadow-xl drop-shadow-md' src={AnalystFactory} alt='AnalsytFactory'/>
+                    <h2 className='w-64 text-base md:text-xl text-center text-gray-600 leading-relaxed mt-4 mb-4'>Dividend Reinvestment Calculator</h2>
+                    <a href={DividendReinvestmentLink} target="_blank">
+                        <img className='w-64 mx-auto shadow-xl drop-shadow-md' src={DivReinvest} alt='DividendReinvestment'/>
                     </a>
                     
                     <div className="w-64">
@@ -132,14 +133,14 @@ function Experience() {
                         A full stack CRUD style web application using Node/Express/MongoDB
                         </p>   */}
                         <div className="mt-4 text-center text-blue-700 hover:underline">
-                            <a href ={AnalystFactoryLink} target="_blank">See More</a>
+                            <a href ={DividendReinvestmentLink} target="_blank">See More</a>
                         </div>
                     </div>
                 </div>
                 <div class="w-78 bg-white shadow rounded m-4 p-14">
-                    <h2 className='w-64 text-base md:text-xl text-center text-gray-600 leading-relaxed mt-4 mb-4'>Lead Stream Local</h2>
-                    <a href={LeadStreamLocalLink} target="_blank">
-                        <img className='w-64 mx-auto shadow-xl drop-shadow-md' src={LeadStreamLocal} alt='LeadStreamLocal'/>
+                    <h2 className='w-64 text-base md:text-xl text-center text-gray-600 leading-relaxed mt-4 mb-4'>Valinor Energy Calculator</h2>
+                    <a href={ValinorLink} target="_blank">
+                        <img className='w-64 mx-auto shadow-xl drop-shadow-md' src={ValinorEnergy} alt='ValinorEnergy'/>
                     </a>
                     
                     <div className="w-64">
@@ -148,7 +149,7 @@ function Experience() {
                         </p> */}
                     </div>
                     <div className="mt-4 text-center text-blue-700 hover:underline">
-                        <a href={LeadStreamLocal} target="_blank">See More</a>
+                        <a href={ValinorLink} target="_blank">See More</a>
                     </div>
                 </div>
                 <div class="w-78 bg-white shadow rounded m-4 p-14">
